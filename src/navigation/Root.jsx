@@ -11,6 +11,8 @@ import FullName from "../screens/Userscreen/Auth/FullName";
 import GymLocation from "../screens/Userscreen/Auth/GymLocation";
 import EmergencyContact from "../screens/Userscreen/Auth/EmergencyContact";
 import Gender from "../screens/Userscreen/Auth/Gender";
+import Age from "../screens/Userscreen/Auth/Age";
+import Height from "../screens/Userscreen/Auth/Height";
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +25,8 @@ export default function Root() {
       <Stack.Screen name="GymLocation" component={GymLocation} />
       <Stack.Screen name="EmergencyContact" component={EmergencyContact} />
       <Stack.Screen name="Gender" component={Gender} />
+      <Stack.Screen name="Age" component={Age} />
+      <Stack.Screen name="Height" component={Height} />
 
       <Stack.Screen name="HomePage" component={HomePage} />
     </Stack.Navigator>

@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Dimensions, ImageBackground } from "react-nativ
 import { SafeAreaView } from "react-native-safe-area-context";
 import PhoneInput from "react-native-phone-number-input";
 import BottomNavigator from "../../../navigation/BottomNavigator";
+import FooterNote from "../../../components/FooterNote";
 
 const { width } = Dimensions.get("window");
 
@@ -51,9 +52,7 @@ const EmergencyContact = ({ navigation }) => {
       </View>
 
       {/* Footer text */}
-      <Text style={styles.footerText}>
-        Your data is only used to personalize your experience, never sold or misused.
-      </Text>
+      <FooterNote/>
 
       {/* Bottom Navigation */}
       <BottomNavigator
@@ -82,7 +81,7 @@ const styles = StyleSheet.create({
   subtitle: { fontSize: 14, color: "#9CA3AF", lineHeight: 20 },
 
   phoneInputContainer: {
-    width: width - 40,
+    width: width -40,
     alignSelf: "center",
     borderWidth: 1,
     borderColor: "#FFFFFF",
@@ -96,15 +95,7 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
   },
 
-  footerText: {
-    fontSize: 12,
-    color: "#6B7280",
-    textAlign: "center",
-    position: "absolute",
-    bottom: 120,
-    width: width - 40,
-    alignSelf: "center",
-  },
+  
 });
 
 export default EmergencyContact;

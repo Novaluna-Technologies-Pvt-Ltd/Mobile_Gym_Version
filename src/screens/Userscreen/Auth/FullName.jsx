@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Dimensions, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import BottomNavigator from '../../../navigation/BottomNavigator';
+import FooterNote from '../../../components/FooterNote';
 
 const { width } = Dimensions.get('window');
 
@@ -32,10 +33,7 @@ const FullName = ({ navigation }) => {
       />
 
       {/* Footer */}
-      <Text style={styles.footerText}>
-        Your data is only used to personalize your experience, never sold or
-        misused.
-      </Text>
+      <FooterNote/>
 
       {/* Reusable Bottom Navigation */}
       <BottomNavigator       
@@ -69,14 +67,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#fff',
   },
-  footerText: {
-    fontSize: 12,
-    color: '#6B7280',
-    textAlign: 'center',
-    position: 'absolute',
-    bottom: 120,
-    width: width - 20,
-  },
+  
 });
 
 export default FullName;

@@ -8,7 +8,7 @@ const BottomNavigator = ({ onBack, onNext }) => {
   return (
     <View style={styles.navWrapper}>
       {/* Back button */}
-      <TouchableOpacity style={styles.navButton} onPress={onBack}>
+      <TouchableOpacity style={styles.navButtonback} onPress={onBack}>
         <Image source={backIcon} style={styles.iconImage} />
       </TouchableOpacity>
 
@@ -45,12 +45,21 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#222',
   },
+  navButtonback:{
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: '#4B5563',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   navButton: {
     width: 48,
     height: 48,
     borderRadius: 24,
     borderWidth: 1,
-    borderColor: '#666',
+    borderColor: '#F9FAFB',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -67,7 +76,7 @@ const styles = StyleSheet.create({
   dash: {
     height: 3,
     borderRadius: 2,
-    backgroundColor: '#fff', 
+    backgroundColor: '#ffff', 
     width:24,
   },
   

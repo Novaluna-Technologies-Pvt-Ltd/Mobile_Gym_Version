@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import BottomNavigator from "../../../navigation/BottomNavigator";
+import FooterNote from "../../../components/FooterNote";
 
 const { width } = Dimensions.get("window");
 
@@ -103,10 +104,7 @@ const GymLocation = ({ navigation }) => {
       )}
 
       {/* Footer */}
-      <Text style={styles.footerText}>
-        Your data is only used to personalize your experience, never sold or
-        misused.
-      </Text>
+      <FooterNote/>
 
       {/* Bottom Navigator */}
       <BottomNavigator
@@ -173,14 +171,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
 
-  footerText: {
-    fontSize: 12,
-    color: "#6B7280",
-    textAlign: "center",
-    position: "absolute",
-    bottom: 120,
-    width: width - 20,
-  },
+  
 });
 
 export default GymLocation;
