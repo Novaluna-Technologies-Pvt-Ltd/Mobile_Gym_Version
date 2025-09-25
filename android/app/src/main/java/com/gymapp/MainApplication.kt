@@ -1,4 +1,4 @@
-package com.gym_mobile_version
+package com.gymapp
 
 import android.app.Application
 import com.facebook.react.PackageList
