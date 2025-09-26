@@ -7,7 +7,7 @@ const FooterNote = () => {
   return (
     <Text style={styles.footerText}>
       Your data is only used to personalize your experience, never sold or
-      misused.
+      misused .
     </Text>
   );
 };
